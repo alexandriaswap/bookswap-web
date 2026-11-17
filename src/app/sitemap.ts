@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const updated = {
     home: new Date("2026-11-01"),
     support: new Date("2026-09-08"),
-    privacy: new Date("2026-07-21"),
+    privacy: new Date("2026-11-17"),
     deleteAccount: new Date("2026-09-22"),
     terms: new Date("2026-11-17"),
   };

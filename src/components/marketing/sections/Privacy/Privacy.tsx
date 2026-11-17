@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { fadeUp, staggerContainer, viewport } from "@/lib/motion";
 import { siteConfig } from "@/lib/site";
 
-const effectiveDate = "October 13, 2026";
+// TODO: set to the day this version goes live, before publishing.
+const effectiveDate = "November 17, 2026";
 
 type Block =
   | { type: "text"; text: string }
@@ -76,7 +77,7 @@ const sections: Section[] = [
       { type: "subtitle", text: "Messaging" },
       {
         type: "text",
-        text: "BookSwap provides in-app messaging between users. Messages, message timestamps, and related metadata are stored solely to provide messaging functionality.",
+        text: "BookSwap provides in-app messaging between users. Messages, message timestamps, and related metadata are stored to provide messaging functionality. If a conversation is reported, the BookSwap team may review it to handle the report, as described in Section 3.",
       },
       { type: "subtitle", text: "Location Information" },
       {
@@ -170,9 +171,15 @@ const sections: Section[] = [
           "Deliver real-time chat",
           "Send important notifications",
           "Detect fraud, abuse, and security incidents",
+          "Review reports and enforce our Terms of Service and community guidelines",
           "Improve the performance, reliability, and security of our Services",
           "Comply with legal obligations",
         ],
+      },
+      { type: "subtitle", text: "Reports and Moderation" },
+      {
+        type: "text",
+        text: "When a user reports another user, the BookSwap team reviews the report. To do so we may look at the reported conversation and at the reported user's profile and book listings. We review conversations only when they are reported, and access is limited to the people handling the report. If we find a violation, we may remove content or disable the account.",
       },
       { type: "text", text: "We do not sell your personal information." },
     ],
@@ -252,6 +259,10 @@ const sections: Section[] = [
       {
         type: "text",
         text: "Your swap location is deleted as soon as you remove it in the app or delete your account.",
+      },
+      {
+        type: "text",
+        text: "Reports, and the conversations they concern, may be kept for as long as needed to handle the report and to protect our users, including after an account is deleted.",
       },
     ],
   },
