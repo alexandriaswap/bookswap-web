@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     support: new Date("2026-09-08"),
     privacy: new Date("2026-07-21"),
     deleteAccount: new Date("2026-09-22"),
+    terms: new Date("2026-11-17"),
   };
   // English and Turkish home pages list each other (hreflang in the sitemap).
   const homeLanguages = { en: siteConfig.url, tr: `${siteConfig.url}/tr` };
@@ -46,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${siteConfig.url}/delete-account`,
       lastModified: updated.deleteAccount,
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${siteConfig.url}/terms`,
+      lastModified: updated.terms,
       changeFrequency: "yearly",
       priority: 0.5,
     },

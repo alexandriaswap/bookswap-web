@@ -64,9 +64,9 @@ export default function Footer() {
           {t.footer.deleteAccount}
         </Link>
 
-        {/* <a href="/terms" className="transition-opacity hover:opacity-80">
-          Terms of Service
-        </a> */}
+        <Link href="/terms" className="transition-opacity hover:opacity-80">
+          {t.footer.terms}
+        </Link>
 
         <Link href="/engineering" className="transition-opacity hover:opacity-80">
           {t.footer.engineering}
